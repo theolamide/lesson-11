@@ -2,6 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 
+
 import CheckoutItem from '../../components/checkout-item/checkout-item.component';
 import { selectCartItems, selectCartTotal } from '../../redux/cart/cart.selector';
 
@@ -12,19 +13,19 @@ const CheckoutPage = ({ cartItems, total }) => (
 
     <div className='checkout-page'>
         <div className='checkout-header'>
-            <div classname='header-blcok'>
+            <div className='header-blcok'>
                 <span>Product</span>
             </div>
-            <div classname='header-blcok'>
+            <div className='header-blcok'>
                 <span>Description</span>
             </div>
-            <div classname='header-blcok'>
+            <div className='header-blcok'>
                 <span>Quantity</span>
             </div>
-            <div classname='header-blcok'>
+            <div className='header-blcok'>
                 <span>Price</span>
             </div>
-            <div classname='header-blcok'>
+            <div className='header-blcok'>
                 <span>Remove</span>
             </div>
         </div>
